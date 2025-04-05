@@ -42,7 +42,7 @@ pip install -r requirements.txt
 You can also manually install:
 
 ```bash
-pip install transformers datasets scikit-learn pandas
+pip install transformers datasets scikit-learn pandas accelerate torch
 ```
 
 ---

@@ -24,7 +24,7 @@ if __name__ == "__main__":
             print("Exiting.")
             break
 
-        if not query.strip():  # ignore empty input
+        if not query.strip():
             print("Please enter a valid query.")
             continue
 
