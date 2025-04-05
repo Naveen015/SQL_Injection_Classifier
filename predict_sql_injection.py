@@ -17,6 +17,16 @@ def predict_sql_input(text, model_path=MODEL_PATH):
 
 # Example usage
 if __name__ == "__main__":
-    example = input("Enter input text to classify: ")
-    result = predict_sql_input(example)
-    print(f"Prediction: {result}")
+    while True:
+        query = input("Enter input text to classify (or type 'exit' to quit): ")
+        
+        if query.lower() in ["exit", "end"]:
+            print("Exiting.")
+            break
+
+        if not query.strip():  # ignore empty input
+            print("Please enter a valid query.")
+            continue
+
+        result = predict_sql_input(query)
+        print(f"Prediction: {result}")
