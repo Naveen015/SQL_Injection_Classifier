@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.log
+/results/
+sql_injection_model/
+*.ipynb_checkpoints/
+env/
